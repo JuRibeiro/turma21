@@ -1,0 +1,58 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		/*
+		 * 4) Faça um sistema que leia um número inteiro e mostre uma 
+		 * mensagem indicando se este número é par ou ímpar, e se 
+		 * é positivo ou negativo.
+		 */
+
+		 //declaração de variaveis
+		 inteiro numero
+
+		 //entrada
+			escreva ("Digite um numero. Podendo ser ele, positivo ou negativo: ")
+		 	leia (numero)
+
+		 //processamento
+		 	se (((numero%2)==0) e (numero < 0))
+			{
+				escreva ("O número é par: ", numero, " e também é negativo \n")
+			}
+
+			se (((numero%2)==0) e (numero > 0))
+			{
+				escreva ("O número é par: ", numero, " e também é positivo \n")
+			}
+
+			// O ERRO ESTA AQUI! O RESULTANTE DA DIVISÃO DEVE SER NEGATIVO TBM, EX: -1
+			se  (((numero%2)==1) e (numero < 0 ))
+			{
+				escreva ("O numero é impar: ", numero, " e também é negativo")
+			}
+
+			se  (((numero%2)==1) e (numero > 0 ))
+			{
+				escreva ("O numero é impar: ", numero, " e também é positivo")
+			}
+
+			se (numero == 0)
+			{
+				escreva ("Número igual a ZERO")
+			}
+ 
+	}
+}
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 371; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
