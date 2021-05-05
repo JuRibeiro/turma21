@@ -25,7 +25,7 @@ public class exercicio_idade
 		idade=2021-anoNascimento;
 		
 		System.out.printf("Nome: %s\nIdade: %d\nGenero: %c", nome,idade,genero);
-
+		
 		leia.close();
 	}
 }
