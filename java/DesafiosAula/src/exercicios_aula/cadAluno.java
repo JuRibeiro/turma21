@@ -11,6 +11,7 @@ public class cadAluno
 		//variaveis
 		String nome=""; //objeto do tipo string
 		int anoNascimento=0;
+		int idade;
 		char tipo=' ';
 		double salario=0.00;
 		boolean vivo = true;
@@ -32,6 +33,7 @@ public class cadAluno
 		
 		//processamento
 		//saidas
+		idade = 2021 - anoNascimento;
 		
 		//%s = string 
 		//%d = int
@@ -39,8 +41,9 @@ public class cadAluno
 		//%c = char
 		System.out.printf("Nome: "+nome);
 		
-		System.out.printf("Nome: %s, idade: %d, tipo: %c, salario: %.4f", nome, (2021-anoNascimento)=idade, tipo, salario);
+		System.out.printf("Nome: %s, idade: %d, tipo: %c, salario: %.4f", nome, idade, tipo, salario);
 		
+		leia.close();
 	}
 
 
