@@ -1,8 +1,8 @@
-package farenheit_para_celsius;
+package exemplos;
 
 import java.util.Scanner;
 
-public class Farenheit_para_Celsius 
+public class FarenheitParaCelsius 
 {
 	public static void main(String[] args) 
 	{
@@ -31,5 +31,5 @@ public class Farenheit_para_Celsius
 		leia.close();
 		
 	}
-	
+
 }

@@ -3,10 +3,9 @@ package exercicios_aula;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicio_em_grupo 
+public class ExercicioIR 
 {
-
-	public static void main(String[]args) 
+public static void main(String[]args) 
 	
 	{
 		
@@ -67,7 +66,5 @@ public class exercicio_em_grupo
 		leia.close();	
 					
 		}
-		
-	}
 
-
+}

@@ -3,7 +3,7 @@ package exercicios_aula;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicioExemploSe 
+public class ExSeParImpar 
 {
 	public static void main (String args[])
 	{
@@ -37,6 +37,5 @@ public class exercicioExemploSe
 		}
 		leia.close();
 	}
-
 
 }

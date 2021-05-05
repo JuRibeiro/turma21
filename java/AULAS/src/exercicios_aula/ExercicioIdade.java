@@ -2,7 +2,7 @@ package exercicios_aula;
 
 import java.util.Scanner;
 
-public class exercicio_idade 
+public class ExercicioIdade 
 {
 	public static void main(String[] args) 
 	{
