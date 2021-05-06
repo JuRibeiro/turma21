@@ -28,9 +28,10 @@ pessoas, calcule e mostre: (WHILE)
 		int totalMulheresNervosas=0, pessoasNervosas=0, pessoasCalmas=0;
 		final int pessoas = 3;
 		int x=0; 
+		char continua = 'S';
 		
 		
-		while (x < pessoas )
+		while (continua == 'S' && x < pessoas )
 		{
 			System.out.println("Informe sua idade: ");
 			idade = ler.nextInt();
@@ -72,6 +73,10 @@ pessoas, calcule e mostre: (WHILE)
 			{
 				pessoasCalmas++;
 			}
+			
+			//saida do looping
+			System.out.println("\nContinuar? S-sim, N-não");
+			continua = ler.next().toUpperCase().charAt(0);
 		}
 		
 		System.out.println("\nRESULTADO DA PESQUISA\n");
