@@ -26,7 +26,7 @@ pessoas, calcule e mostre: (WHILE)
 		char sexo = ' ';
 		int opcao, totalCalmos=0, outrosCalmos=0, totalHomemAgressivo=0;
 		int totalMulheresNervosas=0, pessoasNervosas=0, pessoasCalmas=0;
-		final int pessoas = 3;
+		final int pessoas = 150;
 		int x=0; 
 		char continua = 'S';
 		
@@ -44,6 +44,9 @@ pessoas, calcule e mostre: (WHILE)
 			
 			x++;
 			
+			// usado varios if's porque saão perguntas fechadas
+			// as perguntas são independentes de outras
+			
 			if (opcao==1)
 			{
 				totalCalmos++;
@@ -54,29 +57,33 @@ pessoas, calcule e mostre: (WHILE)
 				}
 			}
 			
-			else if (opcao==3 && sexo == 'M')
+			if (opcao==3 && sexo == 'M')
 			{
 				totalHomemAgressivo++;
 			}
 			
-			else if(sexo=='F' && opcao==2)
+			if(sexo=='F' && opcao==2)
 			{
 				totalMulheresNervosas++;
 			}
 			
-			else if (opcao==2 && idade>=40)
+			if (opcao==2 && idade>40)
 			{
 				pessoasNervosas++;
 			}
 			
-			else if(opcao==1 && idade<=18)
+			if(opcao==1 && idade<=18)
 			{
 				pessoasCalmas++;
 			}
 			
-			//saida do looping
-			System.out.println("\nContinuar? S-sim, N-não");
-			continua = ler.next().toUpperCase().charAt(0);
+			if (x < pessoas)
+			{
+				//saida do looping
+				System.out.println("\nContinuar? S-sim, N-não");
+				continua = ler.next().toUpperCase().charAt(0);
+			}
+			
 		}
 		
 		System.out.println("\nRESULTADO DA PESQUISA\n");
