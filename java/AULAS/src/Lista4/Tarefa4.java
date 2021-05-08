@@ -101,6 +101,7 @@ própria matriz.
 			
 			case '4':
 			{
+				
 				System.out.println("Matriz M1");
 				for(int linha=0; linha<2; linha++)
 				{
