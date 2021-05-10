@@ -1,6 +1,6 @@
-package cadastroCliente;
+package lista5;
 
-public class ClassePessoa 
+public class ClasseClienteTarefa1 
 {
 	public String nome;
 	public int anonascimento;
@@ -11,9 +11,8 @@ public class ClassePessoa
 
 	public void idade() 
 	{
-		System.out.println(2021-anonascimento);
+		System.out.println("Idade cliente: " + (2021-anonascimento));
 	}
 
 
 }
-

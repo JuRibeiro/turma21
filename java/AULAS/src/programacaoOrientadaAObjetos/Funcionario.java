@@ -1,0 +1,25 @@
+package programacaoOrientadaAObjetos;
+
+public class Funcionario 
+{
+	private double salario;
+	private String nome;
+	//botao direito > source > get Setters e and getters, seleciona todos e dar um ok
+	// gera automatico, como abaixo:
+	
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	
+
+}
