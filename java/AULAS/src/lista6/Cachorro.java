@@ -3,22 +3,21 @@ package lista6;
 public class Cachorro extends Animal
 {
 	//atributos
-	private char animalCorre;
 	
 	//construtores
-	public Cachorro(String nome, int idade, boolean emiteSom, char animalCorre)
+	public Cachorro(String nome, int idade)
 	{
-		super(nome, idade, emiteSom);
-		this.animalCorre = animalCorre;
+		super(nome, idade);
 	}
 	
 	//encapsulamento
-	public char isAnimalCorre() {
-		return animalCorre;
-	}
-
-	public void setAnimalCorre(char animalCorre) {
-		this.animalCorre = animalCorre;
+	
+	//métodos, override significa q veio da classe mae
+	
+	@Override
+	public void som()
+	{
+		System.out.println("au au au...");
 	}
 	
 }

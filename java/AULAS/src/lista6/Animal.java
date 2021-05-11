@@ -1,18 +1,17 @@
 package lista6;
 
-public class Animal 
+public abstract class Animal 
 {
+	//abstract : não pode criar no programa principal outro animal
 	//atributos
 	private String nome;
 	private int idade;
-	private boolean emiteSom;
 	
 	//construtor
-	public Animal (String nome, int idade, boolean emiteSom)
+	public Animal (String nome, int idade)
 	{
 		this.nome = nome;
 		this.idade = idade;
-		this.emiteSom = emiteSom;
 	}
 
 	//encapsulamento
@@ -32,13 +31,10 @@ public class Animal
 		this.idade = idade;
 	}
 
-	public boolean getEmiteSom() {
-		return emiteSom;
+	//metodos
+	public void som()
+	{
+		System.out.println("Fazendo som...");
 	}
-
-	public void setEmiteSom(boolean emiteSom) {
-		this.emiteSom = emiteSom;
-	}
-
 	
 }
