@@ -96,7 +96,11 @@ public class Estudante
 	//tirar nota
 	public void tirarNota (double pontos)
 	{
-		this.pontos = this.pontos - pontos;
+		if (this.pontos>=pontos) 
+		{
+			this.pontos = this.pontos - pontos;
+		}
+		System.out.println("Impossível tirar a nota");
 	}
 
 }

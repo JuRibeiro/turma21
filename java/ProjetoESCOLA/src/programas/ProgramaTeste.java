@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import classes.Basico;
 import classes.Estudante;
+import classes.Graduacao;
 
 public class ProgramaTeste {
 
@@ -23,14 +24,39 @@ public class ProgramaTeste {
 		double nota = leia.nextDouble();
 		
 		Basico aluno1 = new Basico (matricula, cpf, dia); //instanciando o objeto
+		Graduacao grad1 = new Graduacao (matricula, cpf);
+		
 		aluno1.setNome(nome);
 		aluno1.adicionarNota(10);
-		System.out.println("PONTOS ATUAIS: "+aluno1.getPontos());
+		grad1.adicionarNota(10);
+		
+		
+		/*System.out.println("PONTOS ATUAIS: "+aluno1.getPontos());
 		System.out.println("Dia atual");
 		int diaAtual = leia.nextInt();
 		
 		aluno1.bonusAniversario(diaAtual);
-		System.out.println("PONTOS após metodo: "+aluno1.getPontos());
+		System.out.println("PONTOS após metodo: "+aluno1.getPontos());*/
+		
+		char op= ' ';
+		System.out.println("Nota do Grade 1 "+grad1.getPontos());
+		
+		for (int x=1; x<=3; x++)
+		{
+			System.out.println("Informe o valor da sua nota: ");
+			nota = leia.nextDouble();
+			System.out.println("Digite 1 para adicionar, 2 para tirar");
+			op = leia.next().charAt(0);
+			if (op == '1')
+			{
+				grad1.adicionarNota(nota);
+			}
+			else 
+			{
+				grad1.tirarNota(nota);
+			}
+			System.out.println("Novo saldo de notas de grade 1: "+grad1.getPontos());
+		}
 	}
 
 }
