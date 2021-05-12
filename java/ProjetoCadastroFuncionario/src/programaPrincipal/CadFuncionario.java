@@ -14,6 +14,8 @@ public class CadFuncionario
 		System.out.printf("\nNome do funcionario Terceiro: %s\n", terc1.getNome());
 		
 		func1.mostrarSalario();
+		System.out.println();
+		terc1.mostrarSalario();
 	}
 
 }

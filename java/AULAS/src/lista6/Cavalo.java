@@ -16,9 +16,10 @@ public final class Cavalo extends Animal
 	
 	//iiirrrrí
 	@Override
-	public void som()
-	{
-		System.out.println("iiirrrrí...");
-	}
+		public void emiteSom()
+		{
+			System.out.println("Fazendo som..."+ super.getSom());
+		}
+	
 		
 }

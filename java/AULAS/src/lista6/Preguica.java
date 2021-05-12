@@ -14,5 +14,12 @@ public class Preguica extends Animal
 	//encapsulamento
 
 	
+	@Override
+	public void emiteSom()
+	{
+		System.out.println("Fazendo som..."+ super.getSom());
+	}
+
+	
 	
 }

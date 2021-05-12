@@ -15,9 +15,9 @@ public class Cachorro extends Animal
 	//métodos, override significa q veio da classe mae
 	
 	@Override
-	public void som()
+	public void emiteSom()
 	{
-		System.out.println("au au au...");
+		System.out.println("Fazendo som..."+ super.getSom());
 	}
 	
 }

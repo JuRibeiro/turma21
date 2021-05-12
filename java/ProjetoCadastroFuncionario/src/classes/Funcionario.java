@@ -4,8 +4,8 @@ public class Funcionario
 {
 	//atributos
 	private String matricula;
-	private int horasTrabalhadas;
-	private double valorHora;
+	protected int horasTrabalhadas;
+	protected double valorHora; //protected as classes filhas podem usar 
 	private String nome;
 	
 	//construtores

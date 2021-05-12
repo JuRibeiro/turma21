@@ -6,6 +6,7 @@ public abstract class Animal
 	//atributos
 	private String nome;
 	private int idade;
+	private String som;
 	
 	//construtor
 	public Animal (String nome, int idade)
@@ -31,8 +32,18 @@ public abstract class Animal
 		this.idade = idade;
 	}
 
+	public String getSom() 
+	{
+		return som;
+	}
+
+	public void setSom(String som) 
+	{
+		this.som = som;
+	}
+
 	//metodos
-	public void som()
+	public void emiteSom()
 	{
 		System.out.println("Fazendo som...");
 	}

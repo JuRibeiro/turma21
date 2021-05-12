@@ -35,7 +35,7 @@ public class Terceiro extends Funcionario
 	@Override
 	public void mostrarSalario()
 	{
-		System.out.printf("O salário deste funcionário é: R$ %.2f",(super.getHorasTrabalhadas() * super.getValorHora()+adicional));
+		System.out.printf("O salário deste funcionário terceiro é: R$ %.2f",(super.getHorasTrabalhadas() * super.getValorHora()+adicional));
 	}
 	
 	
