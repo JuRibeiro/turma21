@@ -51,13 +51,13 @@ public class ProgramaAnimal {
 		preguica1.setSom("este não faz barulho");
 		
 		
-		Animal[] animalzinho = new Animal[3];  //vetor indica duas posições PJ e PF
+		Animal[] animalzinho = new Animal[3];  //vetor indica tres posições 
 		
 		animalzinho[0] = horse1;
 		animalzinho[1] = dog1;
 		animalzinho[2] = preguica1;
 		
-		for (Animal animal:animalzinho)    //pessoa : indica -passar por todas as posições de vetores
+		for (Animal animal:animalzinho)    //animal : indica -passar por todas as posições de vetores
 		{
 			System.out.println(animal.getSom());
 		}
